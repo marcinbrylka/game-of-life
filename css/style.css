@@ -1,3 +1,49 @@
+/*----------------reset-----------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*---------------------main----------------------*/
+
 * {
     box-sizing: border-box;
 }
@@ -5,9 +51,50 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #cccccc;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+}
+
+.content {
+    width: 100%;
+    height: 90px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/*==============header===============*/
+#header {
+    height: 94px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: auto 0;
+}
+
+/*==============board===============*/
 #board div {
     width: 10px;
     height: 10px;
@@ -21,12 +108,33 @@ body {
 }
 
 #board {
-    margin: 50px auto 0;
     min-height: 100px;
-    min-width: 100px
+    min-width: 100px;
+    margin-bottom: 10px;
 }
 
 #game-menu {
     margin: 50px auto;
     width: auto;
+}
+
+/*==============information===============*/
+#information > div {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+/*==============settings===============*/
+#game-set {
+    /*border-top: 1px solid black;*/
+}
+
+/*==============patterns===============*/
+#patterns {
+    /*border-top: 1px solid black;*/
+
 }
